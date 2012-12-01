@@ -1,0 +1,5 @@
+This program is primarily an exercise in using git.
+
+I'm also using it to refresh my knowledge of c++ syntax and programming skills.
+
+The program defines a function to generate a fibonacci number which will be called recursively.

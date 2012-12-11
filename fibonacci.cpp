@@ -3,7 +3,7 @@
 using namespace std;
 
 
-int nextNumber (int prev1, int prev2);
+unsigned long long nextNumber (unsigned long long prev1, unsigned long long prev2);
 
 int main ()
 {
@@ -19,12 +19,12 @@ int main ()
   return 0;
 }
 
-int nextNumber (int prev1, int prev2)
+unsigned long long nextNumber (unsigned long long prev1, unsigned long long prev2)
 {
-  int next = prev1 + prev2;
+  unsigned long long next = prev1 + prev2;
 
-  if(next < 0){
-    cout << "Really?  You need this many Fibonacci's?  We just overflowed the int type!\n\n\n";
+  if(next < prev2){
+    cout << "Really?  You need this many Fibonacci's?  We just overflowed the extra long unsigned integer type!\n\n\n";
   } else {
     cout << next << "   Press enter to generate another... ";
     cin.get();
